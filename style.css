@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn__invertido {
+    margin: 0 2px;
+    background-color: #fff;
+}
+
+.btn__invertido:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    padding: 0 16px;
+    justify-content: end;
+    align-items: center;
+    background-color: #007bff;
+    height: 64px;
+}
+
+.ul__items {
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+.listado__items {
+    color: #007bff ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 16px;
+}
+.tarjeta__producto {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.producto__imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.producto__info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.producto__nombre {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.producto__descripcion {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
