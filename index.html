@@ -9,6 +9,7 @@
 <body>
     <header class="encabezado">
         <nav class="navbar">
+            <!-- Menú de navegación principal -->
             <ul class="ul__items">
                 <li class="listado__items navbar__inicio btn btn__invertido">Inicio</li>
                 <li class="listado__items navbar__productos btn btn__invertido">Productos</li>
@@ -19,41 +20,181 @@
         </nav>
     </header>
     <main>
-        <div class="tarjeta__producto">
-            <img src="resources/HDD.jpg" class="producto__imagen">
-            <div class="producto__info">
-                <h3 class="producto__nombre">Producto 1</h3>
-                <p class="producto__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ullam numquam architecto voluptas, vero quas voluptates minus rem praesentium nam suscipit accusamus recusandae necessitatibus sequi molestiae inventore adipisci ut explicabo?</p>
-                <a href="#" class="btn">Comprar Ahora</a>
+        <!-- Sección de tarjetas de productos -->
+        <section class="tarjetas">
+            <!-- Tarjeta de producto individual -->
+            <div class="tarjeta__producto">
+                <img src="resources/HDD.jpg" class="producto__imagen">
+                <div class="producto__info">
+                    <h3 class="producto__nombre">Producto 1</h3>
+                    <p class="producto__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ullam numquam architecto voluptas, vero quas voluptates minus rem praesentium nam suscipit accusamus recusandae necessitatibus sequi molestiae inventore adipisci ut explicabo?</p>
+                    <a href="#" class="btn">Comprar Ahora</a>
+                </div>
             </div>
-        </div>
-        <div class="tarjeta__producto">
-            <img src="resources/memory-8141642_640.jpg" class="producto__imagen">
-            <div class="producto__info">
-                <h3 class="producto__nombre">Producto 2</h3>
-                <p class="producto__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ullam numquam architecto voluptas, vero quas voluptates minus rem praesentium nam suscipit accusamus recusandae necessitatibus sequi molestiae inventore adipisci ut explicabo?</p>
-                <a href="#" class="btn">Comprar Ahora</a>
+            <!-- Tarjeta de producto individual -->
+            <div class="tarjeta__producto">
+                <img src="resources/memory-8141642_640.jpg" class="producto__imagen">
+                <div class="producto__info">
+                    <h3 class="producto__nombre">Producto 2</h3>
+                    <p class="producto__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ullam numquam architecto voluptas, vero quas voluptates minus rem praesentium nam suscipit accusamus recusandae necessitatibus sequi molestiae inventore adipisci ut explicabo?</p>
+                    <a href="#" class="btn">Comprar Ahora</a>
+                </div>
             </div>
-        </div>
-        <div class="tarjeta__producto">
-            <img src="resources/usb-flash-4377455_640.jpg" class="producto__imagen">
-            <div class="producto__info">
-                <h3 class="producto__nombre">Producto 3</h3>
-                <p class="producto__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ullam numquam architecto voluptas, vero quas voluptates minus rem praesentium nam suscipit accusamus recusandae necessitatibus sequi molestiae inventore adipisci ut explicabo?</p>
-                <a href="#" class="btn">Comprar Ahora</a>
+            <!-- Tarjeta de producto individual -->
+            <div class="tarjeta__producto">
+                <img src="resources/usb-flash-4377455_640.jpg" class="producto__imagen">
+                <div class="producto__info">
+                    <h3 class="producto__nombre">Producto 3</h3>
+                    <p class="producto__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ullam numquam architecto voluptas, vero quas voluptates minus rem praesentium nam suscipit accusamus recusandae necessitatibus sequi molestiae inventore adipisci ut explicabo?</p>
+                    <a href="#" class="btn">Comprar Ahora</a>
+                </div>
             </div>
-        </div>
-        <div class="tarjeta__producto">
-            <img src="resources/watercooling-2541766_640.jpg" class="producto__imagen">
-            <div class="producto__info">
-                <h3 class="producto__nombre">Producto 4</h3>
-                <p class="producto__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ullam numquam architecto voluptas, vero quas voluptates minus rem praesentium nam suscipit accusamus recusandae necessitatibus sequi molestiae inventore adipisci ut explicabo?</p>
-                <a href="#" class="btn">Comprar Ahora</a>
+            <!-- Tarjeta de producto individual -->
+            <div class="tarjeta__producto">
+                <img src="resources/watercooling-2541766_640.jpg" class="producto__imagen">
+                <div class="producto__info">
+                    <h3 class="producto__nombre">Producto 4</h3>
+                    <p class="producto__descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero ullam numquam architecto voluptas, vero quas voluptates minus rem praesentium nam suscipit accusamus recusandae necessitatibus sequi molestiae inventore adipisci ut explicabo?</p>
+                    <a href="#" class="btn">Comprar Ahora</a>
+                </div>
             </div>
-        </div>
-    </main>
-    <footer>
+        </section>
 
+        <!-- Sección de galería de imágenes -->
+        <section class="galeria">
+            <div class="galeria__contenedor">
+                <img src="resources/HDD.jpg" alt="HDD" class="galeria__imagen">
+                <img src="resources/memory-8141642_640.jpg" alt="Memoria" class="galeria__imagen">
+                <img src="resources/usb-flash-4377455_640.jpg" alt="USB" class="galeria__imagen">
+                <img src="resources/watercooling-2541766_640.jpg" alt="Watercooling" class="galeria__imagen">
+            </div>
+        </section>
+
+        <!-- Sección de formulario de contacto -->
+        <section class="contacto">
+            <h2 class="contacto__titulo">
+                <span class="contacto__icono">📧</span>
+                <span class="contacto__texto">Formulario de Contacto</span>
+            </h2>
+            <form class="contacto__formulario">
+                <!-- Contenedor de campos del formulario -->
+                <div class="form__fila">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form__fila">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form__fila">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form__fila">
+                    <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                </div>
+                <div class="form__fila">
+                    <label for="tipo_documento">Tipo de documento:</label>
+                    <select id="tipo_documento" name="tipo_documento" required>
+                        <option value="">Seleccione...</option>
+                        <option value="cc">Cédula de Ciudadanía</option>
+                        <option value="ti">Tarjeta de Identidad</option>
+                        <option value="pasaporte">Pasaporte</option>
+                    </select>
+                </div>
+                <div class="form__fila">
+                    <label for="numero_documento">Número de documento:</label>
+                    <input type="text" id="numero_documento" name="numero_documento" required>
+                </div>
+                <div class="form__fila">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form__fila form__fila--boton">
+                    <button type="submit" class="btn">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Sección de lista de tareas -->
+        <section class="lista-de-tareas">
+            <h2 class="lista-de-tareas__titulo">Lista de Tareas</h2>
+            <ul class="lista-de-tareas__lista">
+                <!-- Ítem de tarea individual -->
+                <li class="lista-de-tareas__item">
+                    <span class="tarea__nombre">Revisar correos</span>
+                    <span class="tarea__desc">Verificar mensajes nuevos y responder urgentes.</span>
+                    <span class="tarea__estado tarea__estado--pendiente">Pendiente</span>
+                </li>
+                <!-- Ítem de tarea individual -->
+                <li class="lista-de-tareas__item">
+                    <span class="tarea__nombre">Actualizar inventario</span>
+                    <span class="tarea__desc">Registrar productos recibidos y ajustar cantidades.</span>
+                    <span class="tarea__estado tarea__estado--progreso">En progreso</span>
+                </li>
+                <!-- Ítem de tarea individual -->
+                <li class="lista-de-tareas__item">
+                    <span class="tarea__nombre">Llamar a proveedores</span>
+                    <span class="tarea__desc">Solicitar cotizaciones y confirmar entregas.</span>
+                    <span class="tarea__estado tarea__estado--pendiente">Pendiente</span>
+                </li>
+                <!-- Ítem de tarea individual -->
+                <li class="lista-de-tareas__item">
+                    <span class="tarea__nombre">Preparar envíos</span>
+                    <span class="tarea__desc">Empaquetar productos y generar guías.</span>
+                    <span class="tarea__estado tarea__estado--completada">Completada</span>
+                </li>
+                <!-- Ítem de tarea individual -->
+                <li class="lista-de-tareas__item">
+                    <span class="tarea__nombre">Actualizar página web</span>
+                    <span class="tarea__desc">Subir nuevos productos y ofertas.</span>
+                    <span class="tarea__estado tarea__estado--pendiente">Pendiente</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sección de testimonial de usuario -->
+        <section class="testimonial">
+            <div class="testimonial__contenedor">
+                <img src="resources/usuario_random.png" alt="Avatar" class="testimonial__avatar">
+                <div class="testimonial__texto">
+                    <p class="testimonial__mensaje">
+                        "Excelente servicio y productos de calidad. El equipo resolvió todas mis dudas y el envío fue muy rápido. ¡Recomendado!"
+                    </p>
+                    <span class="testimonial__autor">Juan Pérez</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer con tres columnas de información -->
+    <footer>
+        <div class="footer__contenedor">
+            <div class="footer__columna">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>Tel: 123-456-7890</li>
+                    <li>Email: info@ejemplo.com</li>
+                    <li>Dirección: Calle 123, Ciudad</li>
+                </ul>
+            </div>
+            <div class="footer__columna">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Descuentos</a></li>
+                </ul>
+            </div>
+            <div class="footer__columna">
+                <h4>Síguenos</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
